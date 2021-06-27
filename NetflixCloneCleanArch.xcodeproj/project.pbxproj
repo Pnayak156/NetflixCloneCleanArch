@@ -56,15 +56,31 @@
 		0BF1953B268855BF00423AC1 /* NetflixCloneCleanArch */ = {
 			isa = PBXGroup;
 			children = (
-				0BF1953C268855BF00423AC1 /* AppDelegate.swift */,
-				0BF1953E268855BF00423AC1 /* SceneDelegate.swift */,
-				0BF19540268855BF00423AC1 /* ViewController.swift */,
-				0BF19542268855BF00423AC1 /* Main.storyboard */,
-				0BF19545268855C200423AC1 /* Assets.xcassets */,
-				0BF19547268855C200423AC1 /* LaunchScreen.storyboard */,
+				0BF19556268899FE00423AC1 /* Resources */,
+				0BF19555268899F000423AC1 /* Source */,
 				0BF1954A268855C200423AC1 /* Info.plist */,
 			);
 			path = NetflixCloneCleanArch;
+			sourceTree = "<group>";
+		};
+		0BF19555268899F000423AC1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0BF1953C268855BF00423AC1 /* AppDelegate.swift */,
+				0BF1953E268855BF00423AC1 /* SceneDelegate.swift */,
+				0BF19540268855BF00423AC1 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0BF19556268899FE00423AC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BF19542268855BF00423AC1 /* Main.storyboard */,
+				0BF19545268855C200423AC1 /* Assets.xcassets */,
+				0BF19547268855C200423AC1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +93,7 @@
 				0BF19535268855BF00423AC1 /* Sources */,
 				0BF19536268855BF00423AC1 /* Frameworks */,
 				0BF19537268855BF00423AC1 /* Resources */,
+				0BF195522688958300423AC1 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -131,6 +148,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF195522688958300423AC1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BF19535268855BF00423AC1 /* Sources */ = {
